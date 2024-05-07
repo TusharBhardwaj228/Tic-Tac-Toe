@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(246, 250, 230);
+  gap: 18px;
+  overflow: hidden;
+}
+
+.main{
+  display: inline-grid;
+  grid-template-columns: 80px 80px 80px;
+  gap: 2px;
+  background-color: rgb(248, 156, 111);
+  box-shadow: 0px 0px 10px 2px rgb(238, 215, 100);
+}
+
+.grid-item{
+  border: none;
+  background-color: black;
+  height: 70px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 25px;
+}
+
+@keyframes floatFromLeft{
+  0% {
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+h1{
+  animation: floatFromLeft 5s linear infinite;
+}
+.turn-css{
+  font-size: 30px;
+  color: rgb(180, 112, 245);
+}
